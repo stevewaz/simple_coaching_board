@@ -103,7 +103,13 @@ class AppDatabase extends _$AppDatabase {
       );
 
   static QueryExecutor _openConnection() {
-    return driftDatabase(name: 'coaching_board');
+    return driftDatabase(
+      name: 'coaching_board',
+      web: DriftWebOptions(
+        sqlite3Wasm: Uri.parse('sqlite3.wasm'),
+        driftWorker: Uri.parse('drift_worker.js'),
+      ),
+    );
   }
 
   // ─── PLAYS ─────────────────────────────────────────────
