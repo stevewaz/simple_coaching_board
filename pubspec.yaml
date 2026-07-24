@@ -39,6 +39,21 @@ dependencies:
   drift: ^2.22.0
   drift_flutter: ^0.2.0
 
+  # State management
+  provider: ^6.0.0
+
+  # Navigation & Routing
+  go_router: ^13.0.0
+
+  # HTTP Client
+  http: ^1.1.0
+
+  # Local storage & preferences
+  shared_preferences: ^2.2.0
+
+  # Logging
+  logger: ^2.0.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
